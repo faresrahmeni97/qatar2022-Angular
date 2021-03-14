@@ -1,0 +1,26 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Staff List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>nom</th>
+            <th>prenom</th>
+            <th>role</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let staff of staffs | async">
+            <td>{{staff.nom}}</td>
+            <td>{{staff.prenom}}</td>
+            <td>{{staff.role}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  

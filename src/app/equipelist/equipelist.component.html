@@ -1,0 +1,27 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2> Equipe List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>nom Pays </th>
+            <th>formation</th>
+            <th>nombre coupe</th>
+            <th>image equipe</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let equipe of equipes | async">
+            <td>{{equipe.paysequipe}}</td>
+            <td>{{equipe.formation}}</td>
+            <td>{{equipe.nbcoupe}}</td>
+            <td>{{equipe.imageequipe}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  

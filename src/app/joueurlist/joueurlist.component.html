@@ -1,0 +1,29 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>joueur List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>nom</th>
+            <th>prenom</th>
+            <th>numposte</th>
+            <th>club</th>
+            <th>poste</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let joueur of joueurs | async">
+            <td>{{joueur.nom}}</td>
+            <td>{{joueur.prenom}}</td>
+            <td>{{joueur.numposte}}</td>
+            <td>{{joueur.clubjoueur}}</td>
+            <td>{{joueur.poste}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  

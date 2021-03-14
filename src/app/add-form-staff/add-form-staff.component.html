@@ -1,0 +1,30 @@
+<h3>Ajouter Staff</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Nom Staff</label>
+      <input type="text" class="form-control" id="nom" required [(ngModel)]="staff.nom" name="nom">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Prenom Staff</label>
+      <input type="text" class="form-control" id="prenom" required [(ngModel)]="staff.prenom" name="prenom">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Role Staff</label>
+      <input type="text" class="form-control" id="role" required [(ngModel)]="staff.role" name="role">
+    </div>
+    <div class="form-group">
+        <label for="name">Equipe</label>
+        <input type="text" class="form-control" id="equipe" required [(ngModel)]="ideq" name="equipe">
+      </div>
+      
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+  <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+</div>
